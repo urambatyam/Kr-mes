@@ -1,0 +1,101 @@
+<!doctype html>
+  <html lang="hu">
+  <head>
+    <title>Krémes</title>
+    <link  rel="icon" type="image/x-icon" href="/img/cakeikon.png">
+    <link rel="stylesheet" href="css/basedesign.css">
+
+    <meta charset="utf-8">
+    <meta name="author" content="Zoltán Varga and Vass*">
+    <meta name="description" content="Facts about napoleon cake">
+
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/bum.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="focim">Mindent a krémesről</h1>
+      <h2 class="focim">Regisztráció</h2>
+    </header>
+    <nav>
+      <a href="Homepage.html" class="linkek">Főoldal</a>
+      <a href="history.html" target="_self" class="linkek">Eredete</a>
+      <a href="recipes.html" target="_self" class="linkek">Receptek</a>
+      <a href="quiz.html" target="_self" class="linkek">Kviz</a>
+      <a href="login.html" target="_self" id="keplink">
+        <img src="img/bejelentkezes.png" alt="picture is not found" id="login-icon" title="Bejelentkezés">
+      </a>
+    </nav>
+    <main>
+      <form  method="POST" enctype="multipart/form-data" class="opal">
+        <fieldset>
+          <legend>Regisztrációs adatok</legend>
+          <label>
+            Teljes név:
+            <input type="text" name="full-name" placeholder="Vezetéknév Keresztnév"/>
+          </label>
+          <label>
+            Felhasználónév:
+            <input type="text" name="username" placeholder="valami" required/>
+          </label>
+          <label>
+            Jelszó:
+            <input type="password" name="passwd" placeholder="jelszó" required/>
+          </label>
+          <label>
+            Jelszó ismét:
+            <input type="password" name="passwd-check" placeholder="jelszó" required/>
+          </label>
+          <label>
+            Születési dátum:
+            <input type="date" name="date-of-birth" min="1960-01-01" value="1960-01-01"/>
+          </label>
+          <label>
+            E-mail:
+            <input type="email" name="email" placeholder="valami@email.com" required/>
+          </label>
+          <label>
+            Telefonszám:
+            <input type="tel" name="email" placeholder="+36 00 000 0000" required/>
+          </label>
+          <label>
+            Bankárgyaszám:
+            <input type="number" name="Bankargyaszám" />
+          </label>
+          <label>
+            Személyigazolvány szám:
+            <input type="number" name="Személyigazolvány szám" />
+          </label>
+          <label>
+            Lakcím:
+            <input type="text" name="lakcím" />
+          </label>
+          <label>
+            Trásadalombítosítási szám:
+            <input type="number" name="TB szám" />
+          </label>
+
+          <label for="education">Legmagasabb iskolai végzettség:</label>
+          <select id="education">
+            <option value="elementary">8 általános</option>
+            <option value="highschool">Érettségi</option>
+            <option value="highschool">Technikum</option>
+            <option value="university">Felsőfokú végzettség</option>
+          </select>
+
+          <br>
+          <span>Neme: </span>
+          <label for="op1"><input type="radio" id="op1" name="sex" value="m"/> Férfi</label>
+          <label for="op2"><input type="radio" id="op2" name="sex" value="f"/> Nő</label>
+          <br>
+
+          <label>Profilkép: <input type="file" name="profile-pic"/></label>
+
+          <input type="reset" name="reset-btn" value="Adatok törlése"/>
+          <input type="submit" name="submit-btn" value="Adatok elküldése"/>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

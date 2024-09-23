@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <title>Krémes</title>
+
+    <link  rel="icon" type="image/x-icon" href="/img/cakeikon.png">
+    <link rel="stylesheet" href="css/basedesign.css">
+
+    <meta charset="utf-8">
+    <meta name="author" content="Zoltán Varga and Vass*">
+    <meta name="description" content="Facts about napoleon cake">
+
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/bum.js"></script>
+    <script src="Js/kviz.js"></script>
+    </head>
+    <body>
+    <header>
+      <h1 class="focim">Mindent a krémesről</h1>
+      <h2 class="focim">Kvíz</h2>
+    </header>
+    <nav>
+      <a href="Homepage.html" class="linkek">Főoldal</a>
+      <a href="history.html" target="_self" class="linkek">Eredete</a>
+      <a href="recipes.html" target="_self" class="linkek">Receptek</a>
+      <a href="login.html" target="_self" id="keplink">
+
+        <img src="img/bejelentkezes.png" alt="picture is not found" id="login-icon" title="Bejelentkezés">
+      </a>
+    </nav>
+    <main>
+        <div id="quiz-text">
+        <p>Ezzen a lapon egy 12 krédésből álló kvízt lehet kitölteni a krémesről. Minden krédésre összesen 1 perc gondolkodási időt kapasz krédések között vissza lépni nem lehet, a krédések automatikusan váltják egymást ha az idözitő lejár, és minden egyes krédésre adott helyes válasz +1 minden helytelen -1 pontot ér. A kvíz kezdéséhez katinson a "Kezdés" gombra.(A teszt kitöltéséhez bejelentkezni nem kell de ahozz hogy neve felkerüljön a dicsőségfalra már igen.)</p>
+        <button id="start">Kezdés</button>
+        </div>
+        <form>
+          <fieldset class="no" id="kerdes_1">
+            <legend>&nbsp;Mit jelent magyarul a mille feuille?&nbsp;</legend>
+            <input type="radio" id="A1" name="first">
+            <label for="A1">ezernyi lap</label> <br/>
+
+            <input type="radio" id="A2" name="first">
+            <label for="A2">száznapos tészta</label> <br/>
+
+            <input type="radio" id="A3" name="first">
+            <label for="A3">rakacsos tutymák</label> <br/>
+
+            <input type="radio" id="A4" name="first">
+            <label for="A4">franciaköpet</label>
+          </fieldset>
+
+          <fieldset class="no" id="kerdes_2">
+            <legend>&nbsp;Mikor jelentmeg elöször szakácskönyvekben a krémes első változata?&nbsp;</legend>
+            <input type="radio" id="B1" name="first">
+            <label for="B1">2004</label> <br/>
+
+            <input type="radio" id="B2" name="first">
+            <label for="B2">1651</label> <br/>
+
+            <input type="radio" id="B3" name="first">
+            <label for="B3">1425</label>  <br/>
+
+            <input type="radio" id="B4" name="first">
+            <label for="B4">kiskedden</label>
+          </fieldset>
+
+          <fieldset class="no" id="kerdes_3">
+            <legend>&nbsp;Miből készitik az igazi krémes krémjét?&nbsp;</legend>
+            <input type="radio" id="C1" name="first">
+            <label for="C1">fogpasztából</label> <br/>
+
+            <input type="radio" id="C2" name="first">
+            <label for="C2">srágakrémből</label> <br/>
+
+            <input type="radio" id="C3" name="first">
+            <label for="C3">kocsonyából</label> <br/>
+
+            <input type="radio" id="C4" name="first">
+            <label for="C4">maszkarpónéból</label>
+          </fieldset>
+        </form>
+
+      <div   class="circleProgress_wrapper">
+        <div   class="wrapper right">
+          <div   class="circleProgress rightcircle right_cartoon"  ></div>
+        </div>
+        <div  class="wrapper left">
+          <div   class="circleProgress leftcircle left_cartoon"  ></div>
+        </div>
+        <span id="timer">1</span>
+      </div>
+    </main>
+  </body>
+</html>

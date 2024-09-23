@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="hu">
+
+    <head>
+        <title>Krémes</title>
+
+        <link  rel="icon" type="image/x-icon" href="/img/cakeikon.png">
+        <link rel="stylesheet" href="css/basedesign.css">
+
+        <meta charset="utf-8">
+        <meta name="author" content="Zoltán Varga and Vass*">
+        <meta name="description" content="Facts about napoleon cake">
+
+        <script src="Js/jquery.min.js"></script>
+        <script src="Js/bum.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="focim">Mindent a krémesről</h1>
+            <h2 class="focim">bejelentkezés</h2>
+        </header>
+        <nav>
+            <a href="Homepage.html" class="linkek">Főoldal</a>
+            <a href="history.html" target="_self" class="linkek">Eredete</a>
+            <a href="recipes.html" target="_self" class="linkek">Receptek</a>
+            <a href="quiz.html" target="_self" class="linkek">Kviz</a>
+        </nav>
+        <main>
+            <form method="post" autocomplete="off">
+                <fieldset>
+                    <img src="img/bigprofil.png" alt="Picture is not found">
+                    <label for="username-label">Felhasználónév: </label>
+                    <input type="text" name="username" id="username-label" required class="login-outline-off">
+
+                    <label for="password-label">Jelszó:</label>
+                    <input type="password" name="password" id="password-label" required class="login-outline-off">
+
+                    <input type="submit" name="login" value="Bejelentkezés">
+                    <p>Nincs még fiókod? Regisztrálj <a href="regist.html">itt</a>!</p>
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>
